@@ -94,9 +94,9 @@
 
 .ex-10-icon {
     font-size: 60px;
-    animation: rotation 1s linear infinite;
+    animation: rotation-reverse 1s linear infinite;
 }
-@keyframes rotation{
+@keyframes rotation-reverse{
     from{
         transform: rotate(0deg);
     }
@@ -109,6 +109,20 @@
 
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover{
+    animation: rotation 2s ease-in alternate; 
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(320deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
 
