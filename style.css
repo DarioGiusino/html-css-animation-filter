@@ -160,10 +160,10 @@
 
 
 .ex-12-button:hover .ex-12-top-white{
-    animation: ex-12-top 2s;
+    animation: ex-12-top 2s linear;
 }
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: ex-12-bottom 2s;
+    animation: ex-12-bottom 2s linear;
 }
 @keyframes ex-12-top {
     0%{
@@ -187,5 +187,49 @@
         right:20%;
     }
 }
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: ex-13-top 1s linear infinite;
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: ex-13-bottom 1s linear infinite;
+}
+@keyframes ex-13-top {
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+    33%{
+        top: -10px;
+        left: 90%;
+    }
+    66%{
+        top: 54px;
+        left: 90%;
+    }
+    100%{
+        top: 54px;
+        left: 49%;
+    }
+}
+@keyframes ex-13-bottom {
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+    33%{
+        bottom: -10px;
+        right: 85%;
+    }
+    66%{
+        bottom: 54px;
+        right: 85%;
+    }
+    100%{
+        bottom: 54px;
+        right: 59%;
+    }
+}
+
 
 
