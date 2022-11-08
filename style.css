@@ -79,11 +79,15 @@
 }
 
 
-
-
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: filter 3s, border-radius 3s, transform 3s;
+}
+.ex-9-img:hover{
+    filter: grayscale(1);
+    border-radius: 30px;
+    transform: scale(1.5);
 }
 
 
